@@ -1,21 +1,6 @@
 DockerM - Docker管理平台
 ====
-<br>
-##基本架构
-![image_a01](http://www.nervgeek.com/wp-content/uploads/2016/11/DockerM_打死再也不改版_ver3.0.png)
-<br>
-<br>
-##界面一览（使用了 GentellelaAlela UI）
-![image_a02](http://www.nervgeek.com/wp-content/uploads/2016/11/QQ截图20161115212155.jpg)
-![image_a03](http://www.nervgeek.com/wp-content/uploads/2016/11/QQ截图20161115213105.jpg)
-![image_a04](http://www.nervgeek.com/wp-content/uploads/2016/11/QQ截图20161115212208.jpg)
-![image_a05](http://www.nervgeek.com/wp-content/uploads/2016/11/QQ截图20161115181925.jpg)
-![image_a06](http://www.nervgeek.com/wp-content/uploads/2016/11/QQ截图20161115212218.jpg)
-![image_a07](http://www.nervgeek.com/wp-content/uploads/2016/11/QQ截图20161115212625.jpg)
-![image_a08](http://www.nervgeek.com/wp-content/uploads/2016/11/QQ截图20161115212634.jpg)
-![image_a09](http://www.nervgeek.com/wp-content/uploads/2016/11/QQ截图20161115212644.jpg)
-![image_a10](http://www.nervgeek.com/wp-content/uploads/2016/11/TY5GMDOT5LE8_V@I.png)
-<br>
+
 ##Docker_Web
 使用 Flask 编写的Web UI，界面操作通过 Ajax 访问 API 向 RabbitMQ 发送操作信息，Docker_Client 中的 GetQueueInfo2ControlDocker 监听队列，获取信息操作。<br>
 目前界面仅有基本信息查看、容器详细 JSON 信息查看、容器基本监控信息、容器开关暂停恢复功能。
@@ -60,9 +45,3 @@ GetQueueInfo2SaveDatabase.py 是把 RabbitMQ 中的信息写入数据库的 Agen
 ##下版本规划
 添加网页操作日志记录。<br>
 网络信息界面的实现。
-
-<br>
-思考：
-第一次做管理平台，我毫无经验，也没有广泛的知识储备，以我目前的能力平台仅处于能运行的情况。<br>
-趁着双十一买了本《 Python 自动化运维技术与最佳实践 》，我感觉我应该先构建一个 CMDB 平台，例如先使用 SaltStack 管理主机，然后再延伸至管理 Docker 平台，从上至下。<br>
-DockerM是一个练手的平台，可能从根本架构上就存在非常大的问题，希望有这方面经验的大大能和我交流一下，传授一下经验。
